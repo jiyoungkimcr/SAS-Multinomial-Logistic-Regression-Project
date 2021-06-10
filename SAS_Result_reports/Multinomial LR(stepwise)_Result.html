@@ -1,0 +1,3122 @@
+<!DOCTYPE html>
+<html class="ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b" lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="SAS 9.4" name="generator"/>
+<title>Results: finalproject_multi_FINAL.sas</title>
+<style>
+/*<![CDATA[*/
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .body.c section > table, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .body.c section > pre, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .body.c div > table,
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .body.c div > pre, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .body.c article > table, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .body.c article > pre,
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .body.j section > table, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .body.j section > pre, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .body.j div > table,
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .body.j div > pre, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .body.j article > table, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .body.j article > pre,
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .body.c p.note, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .body.c p.warning, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .body.c p.error, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .body.c p.fatal,
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .body.j p.note, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .body.j p.warning, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .body.j p.error, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .body.j p.fatal,
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .body.c > table.layoutcontainer, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .body.j > table.layoutcontainer { margin-left: auto; margin-right: auto }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .layoutregion.l table, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .layoutregion.l pre, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .layoutregion.l p.note,
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .layoutregion.l p.warning, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .layoutregion.l p.error, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .layoutregion.l p.fatal { margin-left: 0 }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .layoutregion.c table, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .layoutregion.c pre, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .layoutregion.c p.note,
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .layoutregion.c p.warning, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .layoutregion.c p.error, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .layoutregion.c p.fatal { margin-left: auto; margin-right: auto }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .layoutregion.r table, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .layoutregion.r pre, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .layoutregion.r p.note,
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .layoutregion.r table, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .layoutregion.r pre, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .layoutregion.r p.note,
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .layoutregion.r p.warning, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .layoutregion.r p.error, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .layoutregion.r p.fatal { margin-right: 0 }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b article, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b aside, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b details, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b figcaption, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b figure, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b footer, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b header, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b hgroup, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b nav, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b section { display: block }
+html.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b { font-size: 100% }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .body { margin: 1em; font-size: 13px; line-height: 1.231 }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b sup { position: relative; vertical-align: baseline; bottom: 0.25em; font-size: 0.8em }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b sub { position: relative; vertical-align: baseline; top: 0.25em; font-size: 0.8em }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b ul, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b ol { margin: 1em 0; padding: 0 0 0 40px }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b dd { margin: 0 0 0 40px }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b nav ul, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0 }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b img { border: 0; vertical-align: middle }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b svg:not(:root) { overflow: hidden }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b figure { margin: 0 }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b table { border-collapse: collapse; border-spacing: 0 }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .layoutcontainer { border-collapse: separate; border-spacing: 0 }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b p { margin-top: 0; text-align: left }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b h1.heading1 { text-align: left }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b h2.heading2 { text-align: left }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b h3.heading3 { text-align: left }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b h4.heading4 { text-align: left }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b h5.heading5 { text-align: left }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b h6.heading6 { text-align: left }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b span { text-align: left }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b table { margin-bottom: 1em }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b td, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b th { text-align: left; padding: 3px 6px; vertical-align: top }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b td[class$="fixed"], .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b th[class$="fixed"] { white-space: pre }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b section, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b article { padding-top: 1px; padding-bottom: 8px }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b hr.pagebreak { height: 0px; border: 0; border-bottom: 1px solid #c0c0c0; margin: 1em 0 }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .stacked-value { text-align: left; display: block }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .stacked-cell > .stacked-value, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b td.data > td.data, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b th.data > td.data, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b th.data > th.data, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b td.data > th.data, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b th.header > th.header { border: 0 }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .stacked-cell > div.data { border-width: 0 }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .systitleandfootercontainer { white-space: nowrap; margin-bottom: 1em }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .systitleandfootercontainer > p { margin: 0 }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .systitleandfootercontainer > p > span { display: inline-block; width: 100%; white-space: normal }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .batch { display: table }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .toc { display: none }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .proc_note_group, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .proc_title_group { margin-bottom: 1em }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b p.proctitle { margin: 0 }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b p.note, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b p.warning, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b p.error, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b p.fatal { display: table }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .notebanner, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .warnbanner, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .errorbanner, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .fatalbanner,
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .notecontent, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .warncontent, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .errorcontent, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .fatalcontent { display: table-cell; padding: 0.5em }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .notebanner, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .warnbanner, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .errorbanner, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .fatalbanner { padding-right: 0 }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .body > div > ol li { text-align: left }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .beforecaption > h4 { margin-top: 0; margin-bottom: 0 }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .c { text-align: center }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .r { text-align: right }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .l { text-align: left }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .j { text-align: justify }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .d { text-align: right }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .b { vertical-align: bottom }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .m { vertical-align: middle }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .t { vertical-align: top }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .accessiblecaption {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b a:active { color: #800080 }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .aftercaption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    padding-top: 4pt;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .batch > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .batch > tbody, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .batch > thead, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .batch > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .batch { border: hidden; }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .batch {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    padding: 7px;
+    }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .beforecaption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .body {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .bodydate {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    text-align: right;
+    vertical-align: top;
+    width: 100%;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .bycontentfolder {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .byline {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .bylinecontainer > col, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .bylinecontainer > colgroup > col, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .bylinecontainer > colgroup, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .bylinecontainer > tr, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .bylinecontainer > * > tr, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .bylinecontainer > thead, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .bylinecontainer > tbody, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .bylinecontainer > tfoot { border: none; }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .bylinecontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .caption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .cell, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .container {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .contentfolder, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .contentitem {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .contentproclabel, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .contentprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .contents {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: decimal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .contentsdate {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .contenttitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .continued {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    width: 100%;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .data, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .dataemphasis {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .dataemphasisfixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .dataempty {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .datafixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .datastrong {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .datastrongfixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .date {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .document {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .errorbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .errorcontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .errorcontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .extendedpage {
+    background-color: #fafbfe;
+    border-style: solid;
+    border-width: 1pt;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .fatalbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .fatalcontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .fatalcontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .folderaction {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .footer {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .footeremphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .footeremphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .footerempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .footerfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .footerstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .footerstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .frame {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .graph > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .graph > tbody, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .graph > thead, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .graph > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .graph { border: hidden; }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .graph {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .header {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .headeremphasis {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .headeremphasisfixed {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .headerempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .headerfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .headersandfooters {
+    background-color: #edf2f9;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .headerstrong {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .headerstrongfixed {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .heading1, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .heading2, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .heading3, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .heading4, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .heading5, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .heading6 { font-family: Arial, Helvetica, sans-serif }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .index {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .indexaction, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .indexitem {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .indexprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .indextitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .layoutcontainer, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .layoutregion {
+    border-width: 0;
+    border-spacing: 30px;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .linecontent {
+    background-color: #fafbfe;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b a:link { color: #0000ff }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .list {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: disc;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .list10 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .list2 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: circle;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .list3, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .list4, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .list5, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .list6, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .list7, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .list8, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .list9 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .listitem {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: disc;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .listitem10 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .listitem2 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: circle;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .listitem3, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .listitem4, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .listitem5, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .listitem6, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .listitem7, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .listitem8, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .listitem9 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .note {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .notebanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .notecontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .notecontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .output > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .output > tbody, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .output > thead, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .output > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .output { border: hidden; }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .output {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .pageno {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    text-align: right;
+    vertical-align: top;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .pages {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: decimal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .pagesdate {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .pagesitem {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .pagesproclabel, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .pagesprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .pagestitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .paragraph {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .parskip > col, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .parskip > colgroup > col, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .parskip > colgroup, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .parskip > tr, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .parskip > * > tr, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .parskip > thead, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .parskip > tbody, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .parskip > tfoot { border: none; }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .parskip {
+    border: none;
+    border-spacing: 0;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .prepage {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .proctitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .proctitlefixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .rowfooter {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .rowfooteremphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .rowfooteremphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .rowfooterempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .rowfooterfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .rowfooterstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .rowfooterstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .rowheader {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .rowheaderemphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .rowheaderemphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .rowheaderempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .rowheaderfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .rowheaderstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .rowheaderstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .systemfooter, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .systemfooter10, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .systemfooter2, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .systemfooter3, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .systemfooter4, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .systemfooter5, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .systemfooter6, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .systemfooter7, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .systemfooter8, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .systemfooter9 {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .systemtitle, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .systemtitle10, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .systemtitle2, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .systemtitle3, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .systemtitle4, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .systemtitle5, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .systemtitle6, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .systemtitle7, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .systemtitle8, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .systemtitle9 {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .systitleandfootercontainer > col, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .systitleandfootercontainer > colgroup > col, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .systitleandfootercontainer > colgroup, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .systitleandfootercontainer > tr, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .systitleandfootercontainer > * > tr, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .systitleandfootercontainer > thead, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .systitleandfootercontainer > tbody, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .systitleandfootercontainer > tfoot { border: none; }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .systitleandfootercontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .table > col, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .table > colgroup > col {
+    border-left: 1px solid #c1c1c1;
+    border-right: 0 solid #c1c1c1;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .table > tr, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .table > * > tr {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 0 solid #c1c1c1;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .table { border: hidden; }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .table {
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 1px 0 0 1px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .titleandnotecontainer > col, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .titleandnotecontainer > colgroup > col, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .titleandnotecontainer > colgroup, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .titleandnotecontainer > tr, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .titleandnotecontainer > * > tr, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .titleandnotecontainer > thead, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .titleandnotecontainer > tbody, .ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .titleandnotecontainer > tfoot { border: none; }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .titleandnotecontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .titlesandfooters {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .usertext {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b a:visited { color: #800080 }
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .warnbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .warncontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b .warncontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+/*]]>*/
+</style>
+</head>
+<body class="body">
+<div id="div_5f10eb0e-eed0-48a1-8a97-b502c6f45f9b" class="c body">
+<h1 class="body toc">Results: finalproject_multi_FINAL.sas</h1>
+<section data-name="Logistic" data-sec-type="proc">
+<div id="IDX" class="proc_title_group">
+<p class="c proctitle">The LOGISTIC Procedure</p>
+</div>
+<h1 class="contentprocname toc">The Logistic Procedure</h1>
+<article aria-label="Model Information">
+<h1 class="contentitem toc">Model Information</h1>
+<table class="table" style="border-spacing: 0" aria-label="Model Information">
+<caption aria-label="Model Information"></caption>
+<colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">Model Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Data Set</th>
+<td class="data">WORK.ESS_4</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Response Variable</th>
+<td class="data">Y</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Number of Response Levels</th>
+<td class="data">4</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Model</th>
+<td class="data">generalized logit</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Optimization Technique</th>
+<td class="data">Newton-Raphson</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX1" aria-label="Observations Summary">
+<h1 class="contentitem toc">Observations Summary</h1>
+<table class="table" style="border-spacing: 0" aria-label="Observations Summary">
+<caption aria-label="Observations Summary"></caption>
+<colgroup><col/><col/></colgroup>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Number of Observations Read</th>
+<td class="r data">38053</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Number of Observations Used</th>
+<td class="r data">38053</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX2" aria-label="Response Profile">
+<h1 class="contentitem toc">Response Profile</h1>
+<table class="table" style="border-spacing: 0" aria-label="Response Profile">
+<caption aria-label="Response Profile"></caption>
+<colgroup><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Response Profile</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">Ordered<br/>Value</th>
+<th class="b header" scope="col">Y</th>
+<th class="r b header" scope="col">Total<br/>Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="data">Capital Income</td>
+<td class="r data">2083</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="data">Labour Income</td>
+<td class="r data">21737</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="data">Other Income (inclu farming)</td>
+<td class="r data">984</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="data">Social Grants/Benefit Income</td>
+<td class="r data">13249</td>
+</tr>
+</tbody>
+</table>
+<div class="proc_note_group">
+<p class="c proctitle">Logits modeled use Y=&apos;Labour Income&apos; as the reference category.</p>
+</div>
+</article>
+<div class="proc_note_group">
+<p class="c proctitle">Stepwise Selection Procedure</p>
+</div>
+<article id="IDX3" aria-label="Class Level Information">
+<h1 class="contentitem toc">Class Level Information</h1>
+<table class="table" style="border-spacing: 0" aria-label="Class Level Information">
+<caption aria-label="Class Level Information"></caption>
+<colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Class Level Information</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Class</th>
+<th class="b header" scope="col">Value</th>
+<th class="c b header" colspan="2" scope="colgroup">Design Variables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">evmar</th>
+<th class="rowheader" scope="row">1</th>
+<td class="r data">0</td>
+<td class="r data">&#160;</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">&#160;</th>
+<th class="rowheader" scope="row">2</th>
+<td class="r data">1</td>
+<td class="r data">&#160;</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">hinctnta</th>
+<th class="rowheader" scope="row">High income</th>
+<td class="r data">1</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">&#160;</th>
+<th class="rowheader" scope="row">Low income</th>
+<td class="r data">0</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">&#160;</th>
+<th class="rowheader" scope="row">Medium income</th>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">stfeco</th>
+<th class="rowheader" scope="row">1</th>
+<td class="r data">1</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">&#160;</th>
+<th class="rowheader" scope="row">2</th>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">&#160;</th>
+<th class="rowheader" scope="row">3</th>
+<td class="r data">0</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">stfgov</th>
+<th class="rowheader" scope="row">1</th>
+<td class="r data">1</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">&#160;</th>
+<th class="rowheader" scope="row">2</th>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">&#160;</th>
+<th class="rowheader" scope="row">3</th>
+<td class="r data">0</td>
+<td class="r data">1</td>
+</tr>
+</tbody>
+</table>
+</article>
+<section>
+<h1 class="contentfolder toc">Step 0</h1>
+<div class="proc_note_group">
+<p class="c proctitle">Step  0. Intercepts entered:</p>
+</div>
+<article id="IDX4" aria-label="Convergence Status">
+<h1 class="contentitem toc">Convergence Status</h1>
+<table class="table" style="border-spacing: 0" aria-label="Convergence Status">
+<caption aria-label="Convergence Status"></caption>
+<colgroup><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" scope="col">Model Convergence Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="c data">Convergence criterion (GCONV=1E-8) satisfied.</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX5" aria-label="Fit Statistics">
+<h1 class="contentitem toc">Fit Statistics</h1>
+<table class="table" style="border-spacing: 0" aria-label="Fit Statistics">
+<caption aria-label="Fit Statistics"></caption>
+<colgroup><col/><col/><col/></colgroup>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">-2 Log L</th>
+<td class="data">=</td>
+<td class="data">71596.996</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX6" aria-label="Residual Chi-Square">
+<h1 class="contentitem toc">Residual Chi-Square</h1>
+<table class="table" style="border-spacing: 0" aria-label="Residual Chi-Square">
+<caption aria-label="Residual Chi-Square"></caption>
+<colgroup><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Residual Chi-Square Test</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">Chi-Square</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Pr&#160;&gt;&#160;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="r data">18996.3239</td>
+<td class="r data">27</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section>
+<h1 class="contentfolder toc">Step 1</h1>
+<div class="proc_note_group">
+<p class="c proctitle">Step  1. Effect agea entered:</p>
+</div>
+<article id="IDX7" aria-label="Convergence Status">
+<h1 class="contentitem toc">Convergence Status</h1>
+<table class="table" style="border-spacing: 0" aria-label="Convergence Status">
+<caption aria-label="Convergence Status"></caption>
+<colgroup><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" scope="col">Model Convergence Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="c data">Convergence criterion (GCONV=1E-8) satisfied.</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX8" aria-label="Fit Statistics">
+<h1 class="contentitem toc">Fit Statistics</h1>
+<table class="table" style="border-spacing: 0" aria-label="Fit Statistics">
+<caption aria-label="Fit Statistics"></caption>
+<colgroup><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Model Fit Statistics</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Criterion</th>
+<th class="r b header" scope="col">Intercept Only</th>
+<th class="r b header" scope="col">Intercept and Covariates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">AIC</th>
+<td class="r data">71602.996</td>
+<td class="r data">52741.790</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">SC</th>
+<td class="r data">71628.637</td>
+<td class="r data">52793.071</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">-2 Log L</th>
+<td class="r data">71596.996</td>
+<td class="r data">52729.790</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX9" aria-label="R-Square and Max-rescaled R-Square">
+<h1 class="contentitem toc">R-Square and Max-rescaled R-Square</h1>
+<table class="table" style="border-spacing: 0" aria-label="R-Square and Max-rescaled R-Square">
+<caption aria-label="R-Square and Max-rescaled R-Square"></caption>
+<colgroup><col/><col/><col/><col/></colgroup>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">R-Square</th>
+<td class="r data">0.3909</td>
+<th class="rowheader" scope="row">Max-rescaled R-Square</th>
+<td class="r data">0.4612</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX10" aria-label="Global Tests">
+<h1 class="contentitem toc">Global Tests</h1>
+<table class="table" style="border-spacing: 0" aria-label="Global Tests">
+<caption aria-label="Global Tests"></caption>
+<colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Testing Global Null Hypothesis: BETA=0</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Test</th>
+<th class="r b header" scope="col">Chi-Square</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Pr&#160;&gt;&#160;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Likelihood Ratio</th>
+<td class="r data">18867.2058</td>
+<td class="r data">3</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Score</th>
+<td class="r data">15113.5594</td>
+<td class="r data">3</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Wald</th>
+<td class="r data">9370.4031</td>
+<td class="r data">3</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX11" aria-label="Residual Chi-Square">
+<h1 class="contentitem toc">Residual Chi-Square</h1>
+<table class="table" style="border-spacing: 0" aria-label="Residual Chi-Square">
+<caption aria-label="Residual Chi-Square"></caption>
+<colgroup><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Residual Chi-Square Test</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">Chi-Square</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Pr&#160;&gt;&#160;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="r data">4695.9306</td>
+<td class="r data">24</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</article>
+<div class="proc_note_group">
+<p class="c note"><span class="c notebanner">Note:</span><span class="c notecontent">No effects for the model in Step 1 are removed.</span></p>
+</div>
+</section>
+<section>
+<h1 class="contentfolder toc">Step 2</h1>
+<div class="proc_note_group">
+<p class="c proctitle">Step  2. Effect hinctnta entered:</p>
+</div>
+<article id="IDX12" aria-label="Convergence Status">
+<h1 class="contentitem toc">Convergence Status</h1>
+<table class="table" style="border-spacing: 0" aria-label="Convergence Status">
+<caption aria-label="Convergence Status"></caption>
+<colgroup><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" scope="col">Model Convergence Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="c data">Convergence criterion (GCONV=1E-8) satisfied.</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX13" aria-label="Fit Statistics">
+<h1 class="contentitem toc">Fit Statistics</h1>
+<table class="table" style="border-spacing: 0" aria-label="Fit Statistics">
+<caption aria-label="Fit Statistics"></caption>
+<colgroup><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Model Fit Statistics</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Criterion</th>
+<th class="r b header" scope="col">Intercept Only</th>
+<th class="r b header" scope="col">Intercept and Covariates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">AIC</th>
+<td class="r data">71602.996</td>
+<td class="r data">48318.235</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">SC</th>
+<td class="r data">71628.637</td>
+<td class="r data">48420.796</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">-2 Log L</th>
+<td class="r data">71596.996</td>
+<td class="r data">48294.235</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX14" aria-label="R-Square and Max-rescaled R-Square">
+<h1 class="contentitem toc">R-Square and Max-rescaled R-Square</h1>
+<table class="table" style="border-spacing: 0" aria-label="R-Square and Max-rescaled R-Square">
+<caption aria-label="R-Square and Max-rescaled R-Square"></caption>
+<colgroup><col/><col/><col/><col/></colgroup>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">R-Square</th>
+<td class="r data">0.4579</td>
+<th class="rowheader" scope="row">Max-rescaled R-Square</th>
+<td class="r data">0.5403</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX15" aria-label="Global Tests">
+<h1 class="contentitem toc">Global Tests</h1>
+<table class="table" style="border-spacing: 0" aria-label="Global Tests">
+<caption aria-label="Global Tests"></caption>
+<colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Testing Global Null Hypothesis: BETA=0</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Test</th>
+<th class="r b header" scope="col">Chi-Square</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Pr&#160;&gt;&#160;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Likelihood Ratio</th>
+<td class="r data">23302.7614</td>
+<td class="r data">9</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Score</th>
+<td class="r data">18587.6314</td>
+<td class="r data">9</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Wald</th>
+<td class="r data">10606.5848</td>
+<td class="r data">9</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX16" aria-label="Residual Chi-Square">
+<h1 class="contentitem toc">Residual Chi-Square</h1>
+<table class="table" style="border-spacing: 0" aria-label="Residual Chi-Square">
+<caption aria-label="Residual Chi-Square"></caption>
+<colgroup><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Residual Chi-Square Test</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">Chi-Square</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Pr&#160;&gt;&#160;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="r data">335.6761</td>
+<td class="r data">18</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</article>
+<div class="proc_note_group">
+<p class="c note"><span class="c notebanner">Note:</span><span class="c notecontent">No effects for the model in Step 2 are removed.</span></p>
+</div>
+</section>
+<section>
+<h1 class="contentfolder toc">Step 3</h1>
+<div class="proc_note_group">
+<p class="c proctitle">Step  3. Effect evmar entered:</p>
+</div>
+<article id="IDX17" aria-label="Convergence Status">
+<h1 class="contentitem toc">Convergence Status</h1>
+<table class="table" style="border-spacing: 0" aria-label="Convergence Status">
+<caption aria-label="Convergence Status"></caption>
+<colgroup><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" scope="col">Model Convergence Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="c data">Convergence criterion (GCONV=1E-8) satisfied.</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX18" aria-label="Fit Statistics">
+<h1 class="contentitem toc">Fit Statistics</h1>
+<table class="table" style="border-spacing: 0" aria-label="Fit Statistics">
+<caption aria-label="Fit Statistics"></caption>
+<colgroup><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Model Fit Statistics</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Criterion</th>
+<th class="r b header" scope="col">Intercept Only</th>
+<th class="r b header" scope="col">Intercept and Covariates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">AIC</th>
+<td class="r data">71602.996</td>
+<td class="r data">48035.269</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">SC</th>
+<td class="r data">71628.637</td>
+<td class="r data">48163.470</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">-2 Log L</th>
+<td class="r data">71596.996</td>
+<td class="r data">48005.269</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX19" aria-label="R-Square and Max-rescaled R-Square">
+<h1 class="contentitem toc">R-Square and Max-rescaled R-Square</h1>
+<table class="table" style="border-spacing: 0" aria-label="R-Square and Max-rescaled R-Square">
+<caption aria-label="R-Square and Max-rescaled R-Square"></caption>
+<colgroup><col/><col/><col/><col/></colgroup>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">R-Square</th>
+<td class="r data">0.4620</td>
+<th class="rowheader" scope="row">Max-rescaled R-Square</th>
+<td class="r data">0.5451</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX20" aria-label="Global Tests">
+<h1 class="contentitem toc">Global Tests</h1>
+<table class="table" style="border-spacing: 0" aria-label="Global Tests">
+<caption aria-label="Global Tests"></caption>
+<colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Testing Global Null Hypothesis: BETA=0</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Test</th>
+<th class="r b header" scope="col">Chi-Square</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Pr&#160;&gt;&#160;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Likelihood Ratio</th>
+<td class="r data">23591.7269</td>
+<td class="r data">12</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Score</th>
+<td class="r data">18924.7716</td>
+<td class="r data">12</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Wald</th>
+<td class="r data">10675.2586</td>
+<td class="r data">12</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX21" aria-label="Residual Chi-Square">
+<h1 class="contentitem toc">Residual Chi-Square</h1>
+<table class="table" style="border-spacing: 0" aria-label="Residual Chi-Square">
+<caption aria-label="Residual Chi-Square"></caption>
+<colgroup><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Residual Chi-Square Test</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">Chi-Square</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Pr&#160;&gt;&#160;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="r data">48.5554</td>
+<td class="r data">15</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</article>
+<div class="proc_note_group">
+<p class="c note"><span class="c notebanner">Note:</span><span class="c notecontent">No effects for the model in Step 3 are removed.</span></p>
+</div>
+</section>
+<section>
+<h1 class="contentfolder toc">Step 4</h1>
+<div class="proc_note_group">
+<p class="c proctitle">Step  4. Effect stfeco entered:</p>
+</div>
+<article id="IDX22" aria-label="Convergence Status">
+<h1 class="contentitem toc">Convergence Status</h1>
+<table class="table" style="border-spacing: 0" aria-label="Convergence Status">
+<caption aria-label="Convergence Status"></caption>
+<colgroup><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" scope="col">Model Convergence Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="c data">Convergence criterion (GCONV=1E-8) satisfied.</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX23" aria-label="Fit Statistics">
+<h1 class="contentitem toc">Fit Statistics</h1>
+<table class="table" style="border-spacing: 0" aria-label="Fit Statistics">
+<caption aria-label="Fit Statistics"></caption>
+<colgroup><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Model Fit Statistics</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Criterion</th>
+<th class="r b header" scope="col">Intercept Only</th>
+<th class="r b header" scope="col">Intercept and Covariates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">AIC</th>
+<td class="r data">71602.996</td>
+<td class="r data">48026.561</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">SC</th>
+<td class="r data">71628.637</td>
+<td class="r data">48206.043</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">-2 Log L</th>
+<td class="r data">71596.996</td>
+<td class="r data">47984.561</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX24" aria-label="R-Square and Max-rescaled R-Square">
+<h1 class="contentitem toc">R-Square and Max-rescaled R-Square</h1>
+<table class="table" style="border-spacing: 0" aria-label="R-Square and Max-rescaled R-Square">
+<caption aria-label="R-Square and Max-rescaled R-Square"></caption>
+<colgroup><col/><col/><col/><col/></colgroup>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">R-Square</th>
+<td class="r data">0.4623</td>
+<th class="rowheader" scope="row">Max-rescaled R-Square</th>
+<td class="r data">0.5454</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX25" aria-label="Global Tests">
+<h1 class="contentitem toc">Global Tests</h1>
+<table class="table" style="border-spacing: 0" aria-label="Global Tests">
+<caption aria-label="Global Tests"></caption>
+<colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Testing Global Null Hypothesis: BETA=0</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Test</th>
+<th class="r b header" scope="col">Chi-Square</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Pr&#160;&gt;&#160;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Likelihood Ratio</th>
+<td class="r data">23612.4349</td>
+<td class="r data">18</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Score</th>
+<td class="r data">18940.1692</td>
+<td class="r data">18</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Wald</th>
+<td class="r data">10688.8720</td>
+<td class="r data">18</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX26" aria-label="Residual Chi-Square">
+<h1 class="contentitem toc">Residual Chi-Square</h1>
+<table class="table" style="border-spacing: 0" aria-label="Residual Chi-Square">
+<caption aria-label="Residual Chi-Square"></caption>
+<colgroup><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Residual Chi-Square Test</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">Chi-Square</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Pr&#160;&gt;&#160;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="r data">27.6300</td>
+<td class="r data">9</td>
+<td class="r data">0.0011</td>
+</tr>
+</tbody>
+</table>
+</article>
+<div class="proc_note_group">
+<p class="c note"><span class="c notebanner">Note:</span><span class="c notecontent">No effects for the model in Step 4 are removed.</span></p>
+</div>
+</section>
+<section>
+<h1 class="contentfolder toc">Step 5</h1>
+<div class="proc_note_group">
+<p class="c proctitle">Step  5. Effect stfgov entered:</p>
+</div>
+<article id="IDX27" aria-label="Convergence Status">
+<h1 class="contentitem toc">Convergence Status</h1>
+<table class="table" style="border-spacing: 0" aria-label="Convergence Status">
+<caption aria-label="Convergence Status"></caption>
+<colgroup><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" scope="col">Model Convergence Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="c data">Convergence criterion (GCONV=1E-8) satisfied.</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX28" aria-label="Fit Statistics">
+<h1 class="contentitem toc">Fit Statistics</h1>
+<table class="table" style="border-spacing: 0" aria-label="Fit Statistics">
+<caption aria-label="Fit Statistics"></caption>
+<colgroup><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Model Fit Statistics</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Criterion</th>
+<th class="r b header" scope="col">Intercept Only</th>
+<th class="r b header" scope="col">Intercept and Covariates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">AIC</th>
+<td class="r data">71602.996</td>
+<td class="r data">48021.925</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">SC</th>
+<td class="r data">71628.637</td>
+<td class="r data">48252.687</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">-2 Log L</th>
+<td class="r data">71596.996</td>
+<td class="r data">47967.925</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX29" aria-label="R-Square and Max-rescaled R-Square">
+<h1 class="contentitem toc">R-Square and Max-rescaled R-Square</h1>
+<table class="table" style="border-spacing: 0" aria-label="R-Square and Max-rescaled R-Square">
+<caption aria-label="R-Square and Max-rescaled R-Square"></caption>
+<colgroup><col/><col/><col/><col/></colgroup>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">R-Square</th>
+<td class="r data">0.4626</td>
+<th class="rowheader" scope="row">Max-rescaled R-Square</th>
+<td class="r data">0.5457</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX30" aria-label="Global Tests">
+<h1 class="contentitem toc">Global Tests</h1>
+<table class="table" style="border-spacing: 0" aria-label="Global Tests">
+<caption aria-label="Global Tests"></caption>
+<colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Testing Global Null Hypothesis: BETA=0</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Test</th>
+<th class="r b header" scope="col">Chi-Square</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Pr&#160;&gt;&#160;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Likelihood Ratio</th>
+<td class="r data">23629.0715</td>
+<td class="r data">24</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Score</th>
+<td class="r data">18955.6986</td>
+<td class="r data">24</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Wald</th>
+<td class="r data">10690.8820</td>
+<td class="r data">24</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX31" aria-label="Residual Chi-Square">
+<h1 class="contentitem toc">Residual Chi-Square</h1>
+<table class="table" style="border-spacing: 0" aria-label="Residual Chi-Square">
+<caption aria-label="Residual Chi-Square"></caption>
+<colgroup><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Residual Chi-Square Test</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">Chi-Square</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Pr&#160;&gt;&#160;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="r data">10.9764</td>
+<td class="r data">3</td>
+<td class="r data">0.0119</td>
+</tr>
+</tbody>
+</table>
+</article>
+<div class="proc_note_group">
+<p class="c note"><span class="c notebanner">Note:</span><span class="c notecontent">No effects for the model in Step 5 are removed.</span></p>
+</div>
+</section>
+<section>
+<h1 class="contentfolder toc">Step 6</h1>
+<div class="proc_note_group">
+<p class="c proctitle">Step  6. Effect nbthcld entered:</p>
+</div>
+<article id="IDX32" aria-label="Convergence Status">
+<h1 class="contentitem toc">Convergence Status</h1>
+<table class="table" style="border-spacing: 0" aria-label="Convergence Status">
+<caption aria-label="Convergence Status"></caption>
+<colgroup><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" scope="col">Model Convergence Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="c data">Convergence criterion (GCONV=1E-8) satisfied.</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX33" aria-label="Fit Statistics">
+<h1 class="contentitem toc">Fit Statistics</h1>
+<table class="table" style="border-spacing: 0" aria-label="Fit Statistics">
+<caption aria-label="Fit Statistics"></caption>
+<colgroup><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Model Fit Statistics</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Criterion</th>
+<th class="r b header" scope="col">Intercept Only</th>
+<th class="r b header" scope="col">Intercept and Covariates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">AIC</th>
+<td class="r data">71602.996</td>
+<td class="r data">48017.218</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">SC</th>
+<td class="r data">71628.637</td>
+<td class="r data">48273.620</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">-2 Log L</th>
+<td class="r data">71596.996</td>
+<td class="r data">47957.218</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX34" aria-label="R-Square and Max-rescaled R-Square">
+<h1 class="contentitem toc">R-Square and Max-rescaled R-Square</h1>
+<table class="table" style="border-spacing: 0" aria-label="R-Square and Max-rescaled R-Square">
+<caption aria-label="R-Square and Max-rescaled R-Square"></caption>
+<colgroup><col/><col/><col/><col/></colgroup>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">R-Square</th>
+<td class="r data">0.4627</td>
+<th class="rowheader" scope="row">Max-rescaled R-Square</th>
+<td class="r data">0.5459</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX35" aria-label="Global Tests">
+<h1 class="contentitem toc">Global Tests</h1>
+<table class="table" style="border-spacing: 0" aria-label="Global Tests">
+<caption aria-label="Global Tests"></caption>
+<colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Testing Global Null Hypothesis: BETA=0</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Test</th>
+<th class="r b header" scope="col">Chi-Square</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Pr&#160;&gt;&#160;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Likelihood Ratio</th>
+<td class="r data">23639.7787</td>
+<td class="r data">27</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Score</th>
+<td class="r data">18996.3239</td>
+<td class="r data">27</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Wald</th>
+<td class="r data">10711.1738</td>
+<td class="r data">27</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</article>
+<div class="proc_note_group">
+<p class="c note"><span class="c notebanner">Note:</span><span class="c notecontent">No effects for the model in Step 6 are removed.</span></p>
+</div>
+<div class="proc_note_group">
+<p class="c note"><span class="c notebanner">Note:</span><span class="c notecontent">All effects have been entered into the model.</span></p>
+</div>
+</section>
+<article id="IDX36" aria-label="Model Building Summary">
+<h1 class="contentitem toc">Model Building Summary</h1>
+<table class="table" style="border-spacing: 0" aria-label="Model Building Summary">
+<caption aria-label="Model Building Summary"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="9" scope="colgroup">Summary of Stepwise Selection</th>
+</tr>
+<tr>
+<th class="r b header" rowspan="2" scope="col">Step</th>
+<th class="c b header" colspan="2" scope="colgroup">Effect</th>
+<th class="r b header" rowspan="2" scope="col">DF</th>
+<th class="r b header" rowspan="2" scope="col">Number<br/>In</th>
+<th class="r b header" rowspan="2" scope="col">Score<br/>Chi-Square</th>
+<th class="r b header" rowspan="2" scope="col">Wald<br/>Chi-Square</th>
+<th class="r b header" rowspan="2" scope="col">Pr&#160;&gt;&#160;ChiSq</th>
+<th class="b header" rowspan="2" scope="col">Variable<br/>Label</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Entered</th>
+<th class="b header" scope="col">Removed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<th class="rowheader" scope="row">agea</th>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="r data">3</td>
+<td class="r data">1</td>
+<td class="r data">15113.5594</td>
+<td class="r data">&#160;</td>
+<td class="r data">&lt;.0001</td>
+<td class="data">Age of respondent, calculated</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<th class="rowheader" scope="row">hinctnta</th>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="r data">6</td>
+<td class="r data">2</td>
+<td class="r data">4404.9287</td>
+<td class="r data">&#160;</td>
+<td class="r data">&lt;.0001</td>
+<td class="data">Household&apos;s total net income, all sources</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<th class="rowheader" scope="row">evmar</th>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="r data">3</td>
+<td class="r data">3</td>
+<td class="r data">287.8038</td>
+<td class="r data">&#160;</td>
+<td class="r data">&lt;.0001</td>
+<td class="data">Are or ever been married</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<th class="rowheader" scope="row">stfeco</th>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="r data">6</td>
+<td class="r data">4</td>
+<td class="r data">20.9975</td>
+<td class="r data">&#160;</td>
+<td class="r data">0.0018</td>
+<td class="data">How satisfied with present state of economy in country</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<th class="rowheader" scope="row">stfgov</th>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="r data">6</td>
+<td class="r data">5</td>
+<td class="r data">16.6527</td>
+<td class="r data">&#160;</td>
+<td class="r data">0.0106</td>
+<td class="data">How satisfied with the national government</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<th class="rowheader" scope="row">nbthcld</th>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="r data">3</td>
+<td class="r data">6</td>
+<td class="r data">10.9764</td>
+<td class="r data">&#160;</td>
+<td class="r data">0.0119</td>
+<td class="data">Number of children ever given birth to/ fathered</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX37" aria-label="Goodness-of-Fit">
+<h1 class="contentitem toc">Goodness-of-Fit</h1>
+<table class="table" style="border-spacing: 0" aria-label="Goodness-of-Fit">
+<caption aria-label="Goodness-of-Fit"></caption>
+<colgroup><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="5" scope="colgroup">Deviance and Pearson Goodness-of-Fit Statistics</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Criterion</th>
+<th class="r b header" scope="col">Value</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Value/DF</th>
+<th class="r b header" scope="col">Pr&#160;&gt;&#160;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Deviance</th>
+<td class="r data">20909.8349</td>
+<td class="r data">29E3</td>
+<td class="r data">0.7263</td>
+<td class="r data">1.0000</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Pearson</th>
+<td class="r data">42788.5199</td>
+<td class="r data">29E3</td>
+<td class="r data">1.4862</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+<div class="proc_note_group">
+<p class="c proctitle">Number of unique profiles: 9607</p>
+</div>
+</article>
+<article id="IDX38" aria-label="Type 3 Tests">
+<h1 class="contentitem toc">Type 3 Tests</h1>
+<table class="table" style="border-spacing: 0" aria-label="Type 3 Tests">
+<caption aria-label="Type 3 Tests"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Type 3 Analysis of Effects</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Effect</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Wald<br/>Chi-Square</th>
+<th class="r b header" scope="col">Pr&#160;&gt;&#160;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">evmar</th>
+<td class="r data">3</td>
+<td class="r data">244.7939</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">hinctnta</th>
+<td class="r data">6</td>
+<td class="r data">3357.1523</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">stfeco</th>
+<td class="r data">6</td>
+<td class="r data">26.3546</td>
+<td class="r data">0.0002</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">stfgov</th>
+<td class="r data">6</td>
+<td class="r data">16.8194</td>
+<td class="r data">0.0100</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">nbthcld</th>
+<td class="r data">3</td>
+<td class="r data">10.9770</td>
+<td class="r data">0.0119</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">agea</th>
+<td class="r data">3</td>
+<td class="r data">7587.5352</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX39" aria-label="Parameter Estimates">
+<h1 class="contentitem toc">Parameter Estimates</h1>
+<table class="table" style="border-spacing: 0" aria-label="Parameter Estimates">
+<caption aria-label="Parameter Estimates"></caption>
+<colgroup><col/><col/><col/></colgroup><colgroup><col/><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="9" scope="colgroup">Analysis of Maximum Likelihood Estimates</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Parameter</th>
+<th class="b header" scope="col"> &#160;</th>
+<th class="b header" scope="col">Y</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Estimate</th>
+<th class="r b header" scope="col">Standard<br/>Error</th>
+<th class="r b header" scope="col">Wald<br/>Chi-Square</th>
+<th class="r b header" scope="col">Pr&#160;&gt;&#160;ChiSq</th>
+<th class="r b header" scope="col">Exp(Est)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="rowheader" scope="row">&#160;</th>
+<th class="rowheader" scope="row">Capital Income</th>
+<td class="r data">1</td>
+<td class="r data" style="white-space: nowrap">-3.8091</td>
+<td class="r data">0.1159</td>
+<td class="r data">1080.7501</td>
+<td class="r data">&lt;.0001</td>
+<td class="r data">0.022</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="rowheader" scope="row">&#160;</th>
+<th class="rowheader" scope="row">Other Income (inclu farming)</th>
+<td class="r data">1</td>
+<td class="r data" style="white-space: nowrap">-4.3778</td>
+<td class="r data">0.1643</td>
+<td class="r data">709.7288</td>
+<td class="r data">&lt;.0001</td>
+<td class="r data">0.013</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="rowheader" scope="row">&#160;</th>
+<th class="rowheader" scope="row">Social Grants/Benefit Income</th>
+<td class="r data">1</td>
+<td class="r data" style="white-space: nowrap">-8.2283</td>
+<td class="r data">0.1003</td>
+<td class="r data">6736.6096</td>
+<td class="r data">&lt;.0001</td>
+<td class="r data">0.000</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">evmar</th>
+<th class="rowheader" scope="row">2</th>
+<th class="rowheader" scope="row">Capital Income</th>
+<td class="r data">1</td>
+<td class="r data">0.2812</td>
+<td class="r data">0.0647</td>
+<td class="r data">18.9149</td>
+<td class="r data">&lt;.0001</td>
+<td class="r data">1.325</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">evmar</th>
+<th class="rowheader" scope="row">2</th>
+<th class="rowheader" scope="row">Other Income (inclu farming)</th>
+<td class="r data">1</td>
+<td class="r data">0.5491</td>
+<td class="r data">0.0904</td>
+<td class="r data">36.8773</td>
+<td class="r data">&lt;.0001</td>
+<td class="r data">1.732</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">evmar</th>
+<th class="rowheader" scope="row">2</th>
+<th class="rowheader" scope="row">Social Grants/Benefit Income</th>
+<td class="r data">1</td>
+<td class="r data">0.7212</td>
+<td class="r data">0.0479</td>
+<td class="r data">227.0390</td>
+<td class="r data">&lt;.0001</td>
+<td class="r data">2.057</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">hinctnta</th>
+<th class="rowheader" scope="row">High income</th>
+<th class="rowheader" scope="row">Capital Income</th>
+<td class="r data">1</td>
+<td class="r data">0.2698</td>
+<td class="r data">0.0516</td>
+<td class="r data">27.3609</td>
+<td class="r data">&lt;.0001</td>
+<td class="r data">1.310</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">hinctnta</th>
+<th class="rowheader" scope="row">High income</th>
+<th class="rowheader" scope="row">Other Income (inclu farming)</th>
+<td class="r data">1</td>
+<td class="r data" style="white-space: nowrap">-0.6248</td>
+<td class="r data">0.1051</td>
+<td class="r data">35.3152</td>
+<td class="r data">&lt;.0001</td>
+<td class="r data">0.535</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">hinctnta</th>
+<th class="rowheader" scope="row">High income</th>
+<th class="rowheader" scope="row">Social Grants/Benefit Income</th>
+<td class="r data">1</td>
+<td class="r data" style="white-space: nowrap">-0.9305</td>
+<td class="r data">0.0442</td>
+<td class="r data">443.5885</td>
+<td class="r data">&lt;.0001</td>
+<td class="r data">0.394</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">hinctnta</th>
+<th class="rowheader" scope="row">Low income</th>
+<th class="rowheader" scope="row">Capital Income</th>
+<td class="r data">1</td>
+<td class="r data">0.2905</td>
+<td class="r data">0.0649</td>
+<td class="r data">20.0375</td>
+<td class="r data">&lt;.0001</td>
+<td class="r data">1.337</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">hinctnta</th>
+<th class="rowheader" scope="row">Low income</th>
+<th class="rowheader" scope="row">Other Income (inclu farming)</th>
+<td class="r data">1</td>
+<td class="r data">1.4285</td>
+<td class="r data">0.0740</td>
+<td class="r data">372.2969</td>
+<td class="r data">&lt;.0001</td>
+<td class="r data">4.172</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">hinctnta</th>
+<th class="rowheader" scope="row">Low income</th>
+<th class="rowheader" scope="row">Social Grants/Benefit Income</th>
+<td class="r data">1</td>
+<td class="r data">1.5377</td>
+<td class="r data">0.0371</td>
+<td class="r data">1716.4303</td>
+<td class="r data">&lt;.0001</td>
+<td class="r data">4.654</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">stfeco</th>
+<th class="rowheader" scope="row">1</th>
+<th class="rowheader" scope="row">Capital Income</th>
+<td class="r data">1</td>
+<td class="r data" style="white-space: nowrap">-0.00914</td>
+<td class="r data">0.0685</td>
+<td class="r data">0.0178</td>
+<td class="r data">0.8939</td>
+<td class="r data">0.991</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">stfeco</th>
+<th class="rowheader" scope="row">1</th>
+<th class="rowheader" scope="row">Other Income (inclu farming)</th>
+<td class="r data">1</td>
+<td class="r data">0.2686</td>
+<td class="r data">0.0905</td>
+<td class="r data">8.8108</td>
+<td class="r data">0.0030</td>
+<td class="r data">1.308</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">stfeco</th>
+<th class="rowheader" scope="row">1</th>
+<th class="rowheader" scope="row">Social Grants/Benefit Income</th>
+<td class="r data">1</td>
+<td class="r data">0.1009</td>
+<td class="r data">0.0445</td>
+<td class="r data">5.1377</td>
+<td class="r data">0.0234</td>
+<td class="r data">1.106</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">stfeco</th>
+<th class="rowheader" scope="row">3</th>
+<th class="rowheader" scope="row">Capital Income</th>
+<td class="r data">1</td>
+<td class="r data">0.0218</td>
+<td class="r data">0.0559</td>
+<td class="r data">0.1521</td>
+<td class="r data">0.6966</td>
+<td class="r data">1.022</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">stfeco</th>
+<th class="rowheader" scope="row">3</th>
+<th class="rowheader" scope="row">Other Income (inclu farming)</th>
+<td class="r data">1</td>
+<td class="r data" style="white-space: nowrap">-0.1618</td>
+<td class="r data">0.0865</td>
+<td class="r data">3.4983</td>
+<td class="r data">0.0614</td>
+<td class="r data">0.851</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">stfeco</th>
+<th class="rowheader" scope="row">3</th>
+<th class="rowheader" scope="row">Social Grants/Benefit Income</th>
+<td class="r data">1</td>
+<td class="r data" style="white-space: nowrap">-0.0678</td>
+<td class="r data">0.0398</td>
+<td class="r data">2.9015</td>
+<td class="r data">0.0885</td>
+<td class="r data">0.934</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">stfgov</th>
+<th class="rowheader" scope="row">1</th>
+<th class="rowheader" scope="row">Capital Income</th>
+<td class="r data">1</td>
+<td class="r data">0.0313</td>
+<td class="r data">0.0594</td>
+<td class="r data">0.2777</td>
+<td class="r data">0.5982</td>
+<td class="r data">1.032</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">stfgov</th>
+<th class="rowheader" scope="row">1</th>
+<th class="rowheader" scope="row">Other Income (inclu farming)</th>
+<td class="r data">1</td>
+<td class="r data" style="white-space: nowrap">-0.0780</td>
+<td class="r data">0.0855</td>
+<td class="r data">0.8311</td>
+<td class="r data">0.3620</td>
+<td class="r data">0.925</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">stfgov</th>
+<th class="rowheader" scope="row">1</th>
+<th class="rowheader" scope="row">Social Grants/Benefit Income</th>
+<td class="r data">1</td>
+<td class="r data">0.0103</td>
+<td class="r data">0.0406</td>
+<td class="r data">0.0647</td>
+<td class="r data">0.7992</td>
+<td class="r data">1.010</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">stfgov</th>
+<th class="rowheader" scope="row">3</th>
+<th class="rowheader" scope="row">Capital Income</th>
+<td class="r data">1</td>
+<td class="r data">0.0616</td>
+<td class="r data">0.0624</td>
+<td class="r data">0.9757</td>
+<td class="r data">0.3233</td>
+<td class="r data">1.064</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">stfgov</th>
+<th class="rowheader" scope="row">3</th>
+<th class="rowheader" scope="row">Other Income (inclu farming)</th>
+<td class="r data">1</td>
+<td class="r data">0.1497</td>
+<td class="r data">0.0941</td>
+<td class="r data">2.5301</td>
+<td class="r data">0.1117</td>
+<td class="r data">1.161</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">stfgov</th>
+<th class="rowheader" scope="row">3</th>
+<th class="rowheader" scope="row">Social Grants/Benefit Income</th>
+<td class="r data">1</td>
+<td class="r data">0.1569</td>
+<td class="r data">0.0440</td>
+<td class="r data">12.6896</td>
+<td class="r data">0.0004</td>
+<td class="r data">1.170</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">nbthcld</th>
+<th class="rowheader" scope="row">&#160;</th>
+<th class="rowheader" scope="row">Capital Income</th>
+<td class="r data">1</td>
+<td class="r data">0.0177</td>
+<td class="r data">0.0221</td>
+<td class="r data">0.6394</td>
+<td class="r data">0.4239</td>
+<td class="r data">1.018</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">nbthcld</th>
+<th class="rowheader" scope="row">&#160;</th>
+<th class="rowheader" scope="row">Other Income (inclu farming)</th>
+<td class="r data">1</td>
+<td class="r data">0.0765</td>
+<td class="r data">0.0303</td>
+<td class="r data">6.3682</td>
+<td class="r data">0.0116</td>
+<td class="r data">1.080</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">nbthcld</th>
+<th class="rowheader" scope="row">&#160;</th>
+<th class="rowheader" scope="row">Social Grants/Benefit Income</th>
+<td class="r data">1</td>
+<td class="r data" style="white-space: nowrap">-0.0206</td>
+<td class="r data">0.0141</td>
+<td class="r data">2.1137</td>
+<td class="r data">0.1460</td>
+<td class="r data">0.980</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">agea</th>
+<th class="rowheader" scope="row">&#160;</th>
+<th class="rowheader" scope="row">Capital Income</th>
+<td class="r data">1</td>
+<td class="r data">0.0254</td>
+<td class="r data">0.00191</td>
+<td class="r data">176.4333</td>
+<td class="r data">&lt;.0001</td>
+<td class="r data">1.026</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">agea</th>
+<th class="rowheader" scope="row">&#160;</th>
+<th class="rowheader" scope="row">Other Income (inclu farming)</th>
+<td class="r data">1</td>
+<td class="r data">0.0138</td>
+<td class="r data">0.00273</td>
+<td class="r data">25.7351</td>
+<td class="r data">&lt;.0001</td>
+<td class="r data">1.014</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">agea</th>
+<th class="rowheader" scope="row">&#160;</th>
+<th class="rowheader" scope="row">Social Grants/Benefit Income</th>
+<td class="r data">1</td>
+<td class="r data">0.1295</td>
+<td class="r data">0.00149</td>
+<td class="r data">7530.6920</td>
+<td class="r data">&lt;.0001</td>
+<td class="r data">1.138</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX40" aria-label="95% Clodds=PL">
+<h1 class="contentitem toc">95% Clodds=PL</h1>
+<table class="table" style="border-spacing: 0" aria-label="95% Clodds=PL">
+<caption aria-label="95% Clodds=PL"></caption>
+<colgroup><col/><col/><col/></colgroup><colgroup><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="6" scope="colgroup">Odds Ratio Estimates and Profile-Likelihood Confidence Intervals</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Effect</th>
+<th class="b header" scope="col">Y</th>
+<th class="r b header" scope="col">Unit</th>
+<th class="r b header" scope="col">Estimate</th>
+<th class="c b header" colspan="2" scope="colgroup">95% Confidence Limits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">evmar    2 vs 1</th>
+<th class="rowheader" scope="row">Capital Income</th>
+<th class="r data">1.0000</th>
+<td class="r data">1.325</td>
+<td class="r data">1.167</td>
+<td class="r data">1.503</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">evmar    2 vs 1</th>
+<th class="rowheader" scope="row">Other Income (inclu farming)</th>
+<th class="r data">1.0000</th>
+<td class="r data">1.732</td>
+<td class="r data">1.450</td>
+<td class="r data">2.067</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">evmar    2 vs 1</th>
+<th class="rowheader" scope="row">Social Grants/Benefit Income</th>
+<th class="r data">1.0000</th>
+<td class="r data">2.057</td>
+<td class="r data">1.873</td>
+<td class="r data">2.259</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">hinctnta High income vs Medium income</th>
+<th class="rowheader" scope="row">Capital Income</th>
+<th class="r data">1.0000</th>
+<td class="r data">1.310</td>
+<td class="r data">1.184</td>
+<td class="r data">1.449</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">hinctnta High income vs Medium income</th>
+<th class="rowheader" scope="row">Other Income (inclu farming)</th>
+<th class="r data">1.0000</th>
+<td class="r data">0.535</td>
+<td class="r data">0.434</td>
+<td class="r data">0.656</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">hinctnta High income vs Medium income</th>
+<th class="rowheader" scope="row">Social Grants/Benefit Income</th>
+<th class="r data">1.0000</th>
+<td class="r data">0.394</td>
+<td class="r data">0.362</td>
+<td class="r data">0.430</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">hinctnta Low income  vs Medium income</th>
+<th class="rowheader" scope="row">Capital Income</th>
+<th class="r data">1.0000</th>
+<td class="r data">1.337</td>
+<td class="r data">1.176</td>
+<td class="r data">1.517</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">hinctnta Low income  vs Medium income</th>
+<th class="rowheader" scope="row">Other Income (inclu farming)</th>
+<th class="r data">1.0000</th>
+<td class="r data">4.172</td>
+<td class="r data">3.611</td>
+<td class="r data">4.827</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">hinctnta Low income  vs Medium income</th>
+<th class="rowheader" scope="row">Social Grants/Benefit Income</th>
+<th class="r data">1.0000</th>
+<td class="r data">4.654</td>
+<td class="r data">4.328</td>
+<td class="r data">5.006</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">stfeco   1 vs 2</th>
+<th class="rowheader" scope="row">Capital Income</th>
+<th class="r data">1.0000</th>
+<td class="r data">0.991</td>
+<td class="r data">0.866</td>
+<td class="r data">1.133</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">stfeco   1 vs 2</th>
+<th class="rowheader" scope="row">Other Income (inclu farming)</th>
+<th class="r data">1.0000</th>
+<td class="r data">1.308</td>
+<td class="r data">1.095</td>
+<td class="r data">1.562</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">stfeco   1 vs 2</th>
+<th class="rowheader" scope="row">Social Grants/Benefit Income</th>
+<th class="r data">1.0000</th>
+<td class="r data">1.106</td>
+<td class="r data">1.014</td>
+<td class="r data">1.207</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">stfeco   3 vs 2</th>
+<th class="rowheader" scope="row">Capital Income</th>
+<th class="r data">1.0000</th>
+<td class="r data">1.022</td>
+<td class="r data">0.916</td>
+<td class="r data">1.140</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">stfeco   3 vs 2</th>
+<th class="rowheader" scope="row">Other Income (inclu farming)</th>
+<th class="r data">1.0000</th>
+<td class="r data">0.851</td>
+<td class="r data">0.718</td>
+<td class="r data">1.007</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">stfeco   3 vs 2</th>
+<th class="rowheader" scope="row">Social Grants/Benefit Income</th>
+<th class="r data">1.0000</th>
+<td class="r data">0.934</td>
+<td class="r data">0.864</td>
+<td class="r data">1.010</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">stfgov   1 vs 2</th>
+<th class="rowheader" scope="row">Capital Income</th>
+<th class="r data">1.0000</th>
+<td class="r data">1.032</td>
+<td class="r data">0.918</td>
+<td class="r data">1.159</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">stfgov   1 vs 2</th>
+<th class="rowheader" scope="row">Other Income (inclu farming)</th>
+<th class="r data">1.0000</th>
+<td class="r data">0.925</td>
+<td class="r data">0.782</td>
+<td class="r data">1.093</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">stfgov   1 vs 2</th>
+<th class="rowheader" scope="row">Social Grants/Benefit Income</th>
+<th class="r data">1.0000</th>
+<td class="r data">1.010</td>
+<td class="r data">0.933</td>
+<td class="r data">1.094</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">stfgov   3 vs 2</th>
+<th class="rowheader" scope="row">Capital Income</th>
+<th class="r data">1.0000</th>
+<td class="r data">1.064</td>
+<td class="r data">0.941</td>
+<td class="r data">1.201</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">stfgov   3 vs 2</th>
+<th class="rowheader" scope="row">Other Income (inclu farming)</th>
+<th class="r data">1.0000</th>
+<td class="r data">1.161</td>
+<td class="r data">0.965</td>
+<td class="r data">1.395</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">stfgov   3 vs 2</th>
+<th class="rowheader" scope="row">Social Grants/Benefit Income</th>
+<th class="r data">1.0000</th>
+<td class="r data">1.170</td>
+<td class="r data">1.073</td>
+<td class="r data">1.275</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">nbthcld</th>
+<th class="rowheader" scope="row">Capital Income</th>
+<th class="r data">1.0000</th>
+<td class="r data">1.018</td>
+<td class="r data">0.974</td>
+<td class="r data">1.063</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">nbthcld</th>
+<th class="rowheader" scope="row">Other Income (inclu farming)</th>
+<th class="r data">1.0000</th>
+<td class="r data">1.080</td>
+<td class="r data">1.016</td>
+<td class="r data">1.145</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">nbthcld</th>
+<th class="rowheader" scope="row">Social Grants/Benefit Income</th>
+<th class="r data">1.0000</th>
+<td class="r data">0.980</td>
+<td class="r data">0.953</td>
+<td class="r data">1.007</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">agea</th>
+<th class="rowheader" scope="row">Capital Income</th>
+<th class="r data">1.0000</th>
+<td class="r data">1.026</td>
+<td class="r data">1.022</td>
+<td class="r data">1.030</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">agea</th>
+<th class="rowheader" scope="row">Other Income (inclu farming)</th>
+<th class="r data">1.0000</th>
+<td class="r data">1.014</td>
+<td class="r data">1.009</td>
+<td class="r data">1.019</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">agea</th>
+<th class="rowheader" scope="row">Social Grants/Benefit Income</th>
+<th class="r data">1.0000</th>
+<td class="r data">1.138</td>
+<td class="r data">1.135</td>
+<td class="r data">1.142</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX41" aria-label="95% Clodds=PL Plots">
+<h1 class="contentitem toc">95% Clodds=PL Plots</h1>
+<div class="c">
+<img style="height: 480px; width: 640px" alt="Plot of Odds Ratios with 95% Profile-Likelihood Confidence Limits" src="data:image/png;base64,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PezOnTuLFy/evHnzK6+8wtxLq04qlV68eDE+Pn7r1q0+Pj4EQRgZGckKYPz48Tdv3sR/z5o1a/LkyREREV988YWLi8uVK1e+/PLLkJAQ1iDLysqqq6snTJiwa9euNWvW4BJMTU1v377d09PDMy9WJBLJq6++GhYWNnbs2PXr16enp4vF4qioqNdee23EiBFpaWkff/wxx+msPfLnn39OnDiR9Xh7e3v+sakDjgCiqx+Rf//vUml143+oez2mOUXnPKKdkus3TLUZ3b59W+tNxA1EqDzKRAi3oAGt8fLLL3/22WeRkZGOjo4FBQX41rFQKOzr63v77bflnh4TE/Pjjz86OjqWlpYuWbKkqamJ9bCtW7eWl5cHBwcbGRkZGRklJT33UxNadQEBARcuXJgwYYJQKPznP//JMfsihKytrSdNmvT777/jf6VS6YsvviiRSCwtLaOiovz9/SMjI1mD9PHxSUpKcnNzmzFjxsKFC/HpTk5ODg4OVlZWb731Fp+8WPHy8kpJSYmMjJw6daqdnR2+t7x69eo5c+Z4enoGBwdzT+esPVJSUkIGqadsXuYldwsAaIGGhgYCAACFqKqqev/99/t1Smlp6YIFC9QUj8p5/PhxUFBQT08Pc1dG9neaj4dnAHt9h9K2FFdc94spsBTl+MUUFFdc53mWkty6dUu1BaociFB5ZEUo9wXS0NAAt6ABQHH8/PwqKirInwIbHnl5eampqcwvqvWOuQGOcwMctR0FADwHTMAAoBRr167t1/EikUgkEqknFtXzzjvvaDsERfCI3ayxswBAYeA7YAAADA2P2E0aOwsAFAYmYAAAAADQAjABAwAAAIAWgAkYAAAAALQATMAAOxqz+HV2dsbHx48ePdrU1PSll14qKCjAB5B6PqaMjz8a0/bRwNlhzyCf4/nkuGjRImNj47y8PMVC4h8MVUGopzrCfqFyC6FWqgD0EZiAAXY0ZvF74403bt++XV5efvfu3S1btsTFxf34448qSEB7kNmp0DPY19d37Nixjo6ON998U7ES+AdDVRDqqY6wX2jAQgiiQ4AVmID1EoOx+FVXVzc2Nh44cMDNzc3CwiIiIiI9PT0xMREhROr5EELd3d006R6tBVhTINGAto81O3xdy7N2hNDRo0fJlapWr15NipIQQhYWFp2dncOHDz979ixH93HEzBHM5s2brays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"/>
+</div>
+</article>
+<section id="IDX42">
+<h1 class="contentfolder toc">Hosmer-Lemeshow Test</h1>
+<article aria-label="Partition">
+<h1 class="contentitem toc">Partition</h1>
+<table class="table" style="border-spacing: 0" aria-label="Partition">
+<caption aria-label="Partition"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="10" scope="colgroup">Partition for the Hosmer and Lemeshow Test</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">Group</th>
+<th class="r b header" scope="col">Total</th>
+<th class="r b header" scope="col">Observed Y = Capital Income</th>
+<th class="r b header" scope="col">Observed Y = Labour Income</th>
+<th class="r b header" scope="col">Observed Y = Other Income (inclu farming)</th>
+<th class="r b header" scope="col">Observed Y = Social Grants/Benefit Income</th>
+<th class="r b header" scope="col">Expected Y = Capital Income</th>
+<th class="r b header" scope="col">Expected Y = Labour Income</th>
+<th class="r b header" scope="col">Expected Y = Other Income (inclu farming)</th>
+<th class="r b header" scope="col">Expected Y = Social Grants/Benefit Income</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">3801</td>
+<td class="r data">214</td>
+<td class="r data">3365</td>
+<td class="r data">111</td>
+<td class="r data">111</td>
+<td class="r data">207.92</td>
+<td class="r data">3496.1</td>
+<td class="r data">68.60</td>
+<td class="r data">28.34</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">3808</td>
+<td class="r data">222</td>
+<td class="r data">3425</td>
+<td class="r data">64</td>
+<td class="r data">97</td>
+<td class="r data">250.56</td>
+<td class="r data">3407.1</td>
+<td class="r data">76.30</td>
+<td class="r data">74.07</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">3806</td>
+<td class="r data">305</td>
+<td class="r data">3319</td>
+<td class="r data">65</td>
+<td class="r data">117</td>
+<td class="r data">287.06</td>
+<td class="r data">3269.9</td>
+<td class="r data">85.12</td>
+<td class="r data">163.88</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">3805</td>
+<td class="r data">290</td>
+<td class="r data">2989</td>
+<td class="r data">198</td>
+<td class="r data">328</td>
+<td class="r data">281.69</td>
+<td class="r data">3078.7</td>
+<td class="r data">158.46</td>
+<td class="r data">286.13</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="r data">3806</td>
+<td class="r data">287</td>
+<td class="r data">3016</td>
+<td class="r data">106</td>
+<td class="r data">397</td>
+<td class="r data">293.10</td>
+<td class="r data">2810.2</td>
+<td class="r data">156.14</td>
+<td class="r data">546.52</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="r data">3806</td>
+<td class="r data">287</td>
+<td class="r data">2622</td>
+<td class="r data">106</td>
+<td class="r data">791</td>
+<td class="r data">275.95</td>
+<td class="r data">2354.6</td>
+<td class="r data">144.29</td>
+<td class="r data">1031.2</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="r data">3810</td>
+<td class="r data">225</td>
+<td class="r data">1617</td>
+<td class="r data">103</td>
+<td class="r data">1865</td>
+<td class="r data">223.47</td>
+<td class="r data">1704.8</td>
+<td class="r data">118.79</td>
+<td class="r data">1762.9</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="r data">3796</td>
+<td class="r data">156</td>
+<td class="r data">934</td>
+<td class="r data">118</td>
+<td class="r data">2588</td>
+<td class="r data">151.75</td>
+<td class="r data">1015.2</td>
+<td class="r data">91.22</td>
+<td class="r data">2537.8</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="r data">3807</td>
+<td class="r data">75</td>
+<td class="r data">356</td>
+<td class="r data">69</td>
+<td class="r data">3307</td>
+<td class="r data">81.84</td>
+<td class="r data">467.67</td>
+<td class="r data">60.76</td>
+<td class="r data">3196.7</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="r data">3808</td>
+<td class="r data">22</td>
+<td class="r data">94</td>
+<td class="r data">44</td>
+<td class="r data">3648</td>
+<td class="r data">29.65</td>
+<td class="r data">132.61</td>
+<td class="r data">24.31</td>
+<td class="r data">3621.4</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX43" aria-label="Chi-Square Test">
+<h1 class="contentitem toc">Chi-Square Test</h1>
+<table class="table" style="border-spacing: 0" aria-label="Chi-Square Test">
+<caption aria-label="Chi-Square Test"></caption>
+<colgroup><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Hosmer and Lemeshow Goodness-of-Fit Test</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">Chi-Square</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Pr&#160;&gt;&#160;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="r data">582.3904</td>
+<td class="r data">24</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+</section>
+</div>
+</body>
+</html>
